@@ -1,0 +1,42 @@
+<p>personajes works!</p>
+{{results}}
+
+<!--
+<div *ngFor="let pers of results.results" class="card-container">
+    <mat-card>
+      <div class="image-container">
+        <img [src]="pers.image" alt="{{ pers.name }}" class="card-image" />
+      </div>
+      <mat-card-content class="card-content">
+        <h2>{{ pers.name }}</h2>
+        <p>ID: {{ pers.id }}</p>
+        <p>Status: {{ pers.status }}</p>
+        <p>Species: {{ pers.species }}</p>
+        <p>Gender: {{ pers.gender }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+-->
+<div>
+
+  <mat-card class="example-card" *ngFor="let pers of results.results">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>{{ pers.name }}</mat-card-title>
+        <mat-card-subtitle>
+            Status: {{ pers.status }}
+            Species: {{ pers.species }}
+        </mat-card-subtitle>
+        <img [src]="pers.image" alt="{{ pers.name }}" class="card-image" />
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+        <h2>{{ pers.name }}</h2>
+        <p>ID: {{ pers.id }}</p>
+        <p>Status: {{ pers.status }}</p>
+        <p>Species: {{ pers.species }}</p>
+        <p>Gender: {{ pers.gender }}</p>
+    </mat-card-content>
+  </mat-card>
+
+ </div>

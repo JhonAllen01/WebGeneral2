@@ -1,0 +1,24 @@
+.card-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Divide el espacio en dos columnas, la primera para la imagen y la segunda para el contenido */
+    gap: 16px; /* Espacio entre la imagen y el contenido */
+    align-items: center; /* Centra verticalmente los elementos */
+    
+}
+  
+  .image-container {
+    width: 200px; /* Ancho fijo para la imagen */
+    height: 200px; /* Alto fijo para la imagen */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor manteniendo la relación de aspecto */
+  }
+  
+  .card-content {
+    display: inline-block;
+    flex-direction: column; /* Organiza el contenido en una columna */
+    
+}
