@@ -1,0 +1,46 @@
+<p>{{titulo}}</p>
+
+<!--productosForm es el constructor de adminproductos typescript
+y el baseForm esta en el productosForm, por medio del constructor
+es qie logra acceder, gracias a la inyeccion del constructor.
+
+-->
+<form [formGroup]="productosForm.baseForm">
+    <mat-form-field>
+        <mat-label>Id</mat-label>
+        <input matInput formControlName="id" [readonly]="!isCreate">
+    </mat-form-field>
+    
+    <mat-form-field>
+        <mat-label>Producto</mat-label>
+        <input matInput formControlName="nombre">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Categorias</mat-label>
+        <mat-select formControlName="categoria">
+          <mat-option *ngFor="let categoria of listaCategorias" [value]="categoria.id">
+            {{categoria.nombre}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Precio</mat-label>
+        <input type="number" matInput formControlName="precio">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Stock</mat-label>
+        <input type="number" matInput formControlName="stock">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Fecha de ingreso</mat-label>
+        <input type="date"matInput formControlName="fechaIngreso">
+    </mat-form-field>
+</form>
+
+<div>
+    <button mat-button color="primary" [mat-dialog-close]= productosForm.baseForm.value (click)="guardar()">Guardar</button>
+</div>

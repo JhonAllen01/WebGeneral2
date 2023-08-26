@@ -1,0 +1,27 @@
+<footer>
+    <button mat-button [matMenuTriggerFor]="aboveMenu"></button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <button mat-menu-item></button>
+  <button mat-menu-item></button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu"></button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item></button>
+  <button mat-menu-item></button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu"></button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item></button>
+  <button mat-menu-item></button>
+</mat-menu>
+
+
+<button mat-button [matMenuTriggerFor]="afterMenu"></button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+  <button mat-menu-item></button>
+  <button mat-menu-item></button>
+</mat-menu>
+
+</footer>
