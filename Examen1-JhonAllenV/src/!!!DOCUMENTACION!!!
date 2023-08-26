@@ -1,0 +1,67 @@
+/*
+
+RUTAS
+------
+GETALL VEHICULOS
+http://localhost:3000/Vehiculo/
+
+GETBYID VEHICULOS
+http://localhost:3000/Vehiculo/1
+
+GETBYPLAQUE
+http://localhost:3000/Vehiculo/placa/1234
+
+add
+http://localhost:3000/Vehiculo/
+
+patch
+http://localhost:3000/Vehiculo/
+
+delete
+http://localhost:3000/Vehiculo/1
+
+------------
+MISMA LOGICA PARA LAS DEMAS RUTAS
+http://localhost:3000/Color/
+http://localhost:3000/Marca/
+http://localhost:3000/TipoVehiculo/
+
+
+
+
+
+
+
+agregar vehiculos
+{
+    "id": "4",
+    "placa": "12343",
+    "cilindraje": "6000",
+    "cantidadPasajeros": 12,
+    "fechaIngreso": "2022-03-03T06:00:00.000Z",
+    "estado": true
+}
+marca
+{
+    "id": "4",
+    "nombre": "BMW"
+    "estado": true
+}
+COLOR
+{
+    "id": "4",
+    "nombre": "AZUL"
+    "estado": true
+}
+TIPOVEHICULO
+{
+    "id": "4",
+    "nombre": "AZUL"
+    "metalizado": "True"
+    "estado": true
+}
+
+
+
+
+*/
